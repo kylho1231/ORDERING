@@ -1,5 +1,35 @@
 @import "tailwindcss";
 
+/* Mobile App Native Touch & Viewport Optimizations */
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+}
+
+html, body {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  overscroll-behavior-y: contain;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide scrollbar for clean mobile app carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth mobile-like momentum scrolling */
+.mobile-scroll {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
 @keyframes typingAnimation {
   0%, 60%, 100% {
     opacity: 0.3;
@@ -37,3 +67,4 @@
 .animate-bounce-soft {
   animation: bounceSoft 2.5s infinite ease-in-out;
 }
+

@@ -24,6 +24,7 @@ import { ManagerSettings } from './components/manager/ManagerSettings';
 import { useRealtimeOrders } from './hooks/useRealtimeOrders';
 import { Order } from './types';
 import { AIChatStudioModal } from './components/common/AIChatStudioModal';
+import { MobileShell } from './components/mobile/MobileShell';
 
 function MainApp() {
   const { isAuthenticated } = useAuth();
@@ -245,7 +246,9 @@ export default function App() {
   return (
     <AuthProvider>
       <CartProvider>
-        <MainApp />
+        <MobileShell>
+          <MainApp />
+        </MobileShell>
       </CartProvider>
     </AuthProvider>
   );
