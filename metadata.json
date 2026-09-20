@@ -1,0 +1,6 @@
+{
+  "name": "Lovely Eatery",
+  "description": "Mobile-first PWA restaurant ordering and POS management system for Lovely Eatery in San Jose de Buenavista, Antique, Philippines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

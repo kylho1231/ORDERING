@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="bowlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fef3c7" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background with subtle warm gradient -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Inner Warm Glow Circle -->
+  <circle cx="256" cy="256" r="216" fill="#fff" opacity="0.08" />
+  
+  <g filter="url(#shadow)">
+    <!-- Steaming Waves -->
+    <path d="M196 140 C186 115, 210 95, 196 70" stroke="#ffffff" stroke-width="14" stroke-linecap="round" fill="none" opacity="0.9" />
+    <path d="M256 128 C246 100, 270 82, 256 54" stroke="#ffffff" stroke-width="16" stroke-linecap="round" fill="none" opacity="0.95" />
+    <path d="M316 140 C306 115, 330 95, 316 70" stroke="#ffffff" stroke-width="14" stroke-linecap="round" fill="none" opacity="0.9" />
+
+    <!-- Aromatic Cloche / Bowl Lid / Spoon & Fork Accent or Food Bowl -->
+    <!-- Steaming Rice / Food Mound in Bowl -->
+    <path d="M140 250 C140 180, 372 180, 372 250 Z" fill="#fffbeb" />
+    <!-- Garnishing Herb / Leaf -->
+    <path d="M256 195 C244 175, 240 160, 256 150 C272 160, 268 175, 256 195 Z" fill="#16a34a" />
+    <path d="M256 190 C268 175, 282 172, 288 162 C285 180, 270 186, 256 190 Z" fill="#22c55e" />
+
+    <!-- Ceramic Eatery Bowl -->
+    <path d="M112 250 C112 370, 400 370, 400 250 C400 240, 112 240, 112 250 Z" fill="url(#bowlGrad)" />
+    <!-- Bowl Rim Highlight -->
+    <ellipse cx="256" cy="248" rx="144" ry="16" fill="#ffffff" />
+    <!-- Base Foot of Bowl -->
+    <path d="M190 358 L322 358 C310 380, 202 380, 190 358 Z" fill="#fde68a" />
+
+    <!-- Heart Symbol on Bowl indicating "LOVELY" Eatery -->
+    <path d="M256 314 C256 314, 230 292, 230 274 C230 263, 238 256, 248 256 C253 256, 255 259, 256 261 C257 259, 259 256, 264 256 C274 256, 282 263, 282 274 C282 292, 256 314, 256 314 Z" fill="#dc2626" />
+  </g>
+
+  <!-- Typography Badge Ribbon "LOVELY EATERY" -->
+  <g transform="translate(0, 410)">
+    <rect x="76" y="0" width="360" height="52" rx="26" fill="#78350f" opacity="0.9" />
+    <text x="256" y="33" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="22" fill="#fef3c7" letter-spacing="3">LOVELY EATERY</text>
+  </g>
+</svg>
